@@ -25,7 +25,7 @@ body{
 
 .nav-logo{
     margin-left: 5px;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Fredoka', sans-serif;
     font-weight: 700;
     color: #64e3ec;
@@ -43,31 +43,25 @@ body{
     color: #64e3ec;
 }
 
-.nav-button a{
-    font-size: 20px;
-    margin-right: 5px;
-    padding: 5px;
-    color: #64e3ec;
-    background-color: black;
-    border: #64e3ec;
-    text-decoration: none;
+.nav-link a:hover{
+    color: #00f3ff;
 }
+
 /* fim cabeçalho */
 
 /* inicio da pagina principal (apresentação) */
 
 .hero-apresentacao{
     display: flex;
-    align-items: center;
+    padding: 6rem;
+    height: 50vw;
     color: white;
-}
-
-.hero-texto{
-    margin: 50px;
-    padding: 50px;
+    border: 8px solid blue;
+    gap:60px;
 }
 
 .hero-texto h1 {
+    
     font-size: 50px;
     padding: 10px;
 }
@@ -80,18 +74,52 @@ body{
 .hero-texto p{
     font-size: 20px;
     padding: 10px;
-    line-height: 20px;
+    line-height: 20px;  
 }
+
+.hero-titulo{
+    color: #00f3ff;
+}
+
+.hero-subtitulo{
+    color: #00f3ff;
+}
+
+.hero-tecnologia{
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+.java{color:#00f3ff}
+.html{color: #00f3ff;}
+.css{color: #00f3ff;}
+.javascript{color: #00ffff;}
+.github{color: #00f3ff;}
+.git{color: #00f3ff;}
+
+
 
 .hero-img{
     width: 300px;
     height: 280px;
-    margin-right: 80px;
+    
 }
 
 .hero-img img{
-    border-radius: 50px 90px;
-    border: 5px solid #64e3ec;
+    border-radius: 90px;
+    
+    box-shadow: 
+    0 0 5px #fff,       
+    0 0 10px #fff,      
+    0 0 20px #00f3ff,   
+    0 0 40px #00f3ff,  
+    0 0 80px #00f3ff,   
+    0 0 60px #00f3ff; 
+
     width:300px; 
     height:280px;
 }
@@ -107,13 +135,62 @@ body{
 
 .hero-button a{
     text-decoration: none;
-    padding: 15px 80px;
-    background-color: #ffffff;
+    padding: 16px 80px;
+    background-color: #64e3ec;
     border-radius: 40px;
-    border: 4px solid #64e3ec;
     box-shadow: 0 5px 15px #64e3ec;
     color: #000000;
-
 }
 
+.hero-button a:hover{
+    background-color: #00ffff;
+}
+/* fim da apresentação */
 
+/* começo do sobre mim */
+
+.about{
+    height: 40vw;
+    border: 8px solid blueviolet;
+    color: white;
+}
+
+.about h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+.about-conteudo{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    gap: 3rem;
+    padding: 16px;
+    
+}
+
+.about-texto{
+    width: 450px;
+    font-size: 25px;
+    padding: 32px;
+    text-align:center;
+    
+}
+
+.about-skills{
+    padding: 32px;
+    font-size: 20px;
+    
+}
+
+.about-skills li{
+    list-style:circle;
+}
+
+.about-skills strong{
+    color: #00f3ff;
+    font-size: 36px;
+}
